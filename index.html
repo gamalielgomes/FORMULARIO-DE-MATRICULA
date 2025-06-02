@@ -19,6 +19,64 @@
                 </div>
                 <h1>Formulário de matrícula</h1>
                 <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do amanhã.</p>
+
+                <form action="" enctype="multipart/form-data" method="post">
+                <fieldset>
+                    <legend>Informações da criança</legend>
+
+                    <div class="input-wrapper">
+                        <label for="fullname">Nome completo</label>
+                        <input 
+                            id="fullname" 
+                            name="fullname" 
+                            type="text"
+                        >
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="birth">Data de nascimento</label>
+                        <input 
+                            id="birth"
+                            name="birth"
+                            type="date"
+                            lang="pt-BR"
+                        >
+                    </div>
+
+                    <div class="select-wrapper">
+                        <label for="gender">Sexo</label>
+                        <select name="gender" id="gender">
+                            <option value="female">Feminino</option>
+                            <option value="male">Masculino</option>
+                            <option value="na">Prefiro não dizer</option>
+                        </select>
+                    </div>
+
+                    <div class="textarea-wrapper">
+                        <label for="medical-info">Informações médicas</label>
+                        <textarea 
+                            id="medical-info" 
+                            name="medical-info"
+                            cols="30"
+                            rows="10" 
+                            placeholder="Descreva aqui se a criança possui alguma condição médica"
+                        ></textarea>
+                    </div>
+
+                    <div class="droparea-wrapper">
+                        <label for="birth-file">Certidão de nascimento</label>
+                        <input 
+                            type="file" 
+                            name="birth-file" 
+                            id="birth-file"
+                        >
+                        <img src="assets/icons/cloud-upload.svg">
+                        <p>
+                            clique aqui para <br> selecionar os arquivos
+                        </p>
+                    </div>
+                </fieldset>
+            </form>
             </div>
         </main>
 
