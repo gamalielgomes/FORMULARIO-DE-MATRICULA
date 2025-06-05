@@ -26,7 +26,7 @@
                 </p>
 
                 <form action="" enctype="multipart/form-data" method="post">
-                    <fieldset>
+                    <fieldset class="info-child">
                         <legend>Informações da criança</legend>
 
                         <div class="input-wrapper">
@@ -76,7 +76,7 @@
                             </div>
                         </div>
                     </fieldset>
-                    
+
                     <fieldset class="address">
                         <legend>Endereço residencial</legend>
 
@@ -110,6 +110,33 @@
                             </div>
                         </div>
 
+                    </fieldset>
+
+                    <fieldset class="gardian">
+                        <legend>Informações do responsável</legend>
+
+                        <div class="input-wrapper">
+                            <label for="gardian">Nome do responsável</label>
+                            <input type="text" name="gardian" id="gardian"
+                                placeholder="Qual o nome do responsável?">
+                            <small>
+                                Principal responsável legal e contato de emergência
+                            </small>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" name="phone" id="phone" placeholder="(10) 9 8765-4321">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" required>
+                            <div class="error flex">
+                                <img src="assets/icons/alert-circle.svg">
+                                <span>Insira um e-mail válido</span>
+                            </div>
+                        </div>
                     </fieldset>
                 </form>
             </div>
