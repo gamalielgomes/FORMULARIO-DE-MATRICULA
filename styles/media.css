@@ -1,0 +1,48 @@
+@media (width <= 426px) {
+    .mob-off {
+        display: none;
+    }
+
+    body,
+    #app,
+    main {
+        overflow: visible;
+    }
+
+    main,
+    aside {
+        padding: 2rem;
+    }
+
+    button {
+        text-align: center;
+    }
+
+    #app {
+        grid-template-columns: 1fr;
+    
+        & main {
+            grid-row: 2;
+
+            & h1 {
+                font-size: 1.4rem;
+            }
+        }
+
+        & aside {
+            text-align: center;
+        }
+    }
+
+    .actions-wrapper {
+        flex-direction: column;
+
+        & .btn-secondary {
+            margin-left: initial;
+        }
+    }
+
+    .address .flex {
+        display: grid;
+    }
+}
